@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+:root {
+  --accent: #dedede;
+  --dark: #6565db;
+  --light: #9ca1b3;
+  --overlayStart: rgba(55, 55, 86, 0.9);
+  --overlayEnd: rgba(55, 55, 86, 0.7);
+  --ease: all 0.3s ease 0s;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--dark);
+  grid-template-areas: "top";
+}
+
+.App {
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "top";
+}
+.top {
+  grid-area: top;
+  background-image: linear-gradient(
+      to right,
+      var(--overlayStart),
+      var(--overlayEnd)
+    ),
+    url(images/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+}
+
+.navbar {
+  font-family: "Work Sans", sans-serif;
+  font-size: 5vw;
+  font-weight: 300;
+  padding: 30px;
+  color: var(--light);
+}
+
+.search {
+  font-size: 3vw;
+  color: var(--light);
+  justify-content: center;
+  background: transparent;
+  height: 6vh;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+.form {
+  background: transparent;
+  border-radius: 5px;
+  font-family: "Work Sans", sans-serif;
+}
+.button {
+  margin: 8px;
+  border-radius: 5px;
+  color: var(--light);
+  background-color: transparent;
+  /* text-align: center;
+  background-color: var(--dark); */
+}
+
+.answer {
+  font-family: "Work Sans", sans-serif;
+  font-size: 3vw;
+  font-weight: 300;
+  padding: 30px;
+  color: var(--light);
+}
