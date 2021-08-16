@@ -1,4 +1,4 @@
-# Github User's Favourite Language
+# Github User's Favourite Language [![Netlify Status](https://api.netlify.com/api/v1/badges/61dad981-ee82-4ada-a54f-fa4d185143d4/deploy-status)](https://app.netlify.com/sites/githubsfavuserlang/deploys)
 
 This project's objetive is to fetch all the user's public Github repos and shows user's favourite programming language.
 
