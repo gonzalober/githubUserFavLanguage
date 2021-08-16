@@ -9,7 +9,6 @@ export const getTopLanguages = (data) => {
           (countLanguages[data[i].language] || 0) + 1;
       }
     }
-    console.log(countLanguages);
     let resultObj = Object.keys(countLanguages).map((key) => ({
       language: key,
       quantity: countLanguages[key],
